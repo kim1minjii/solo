@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+      /*
+        float
+        1. float는 박스의 위치를 부모요소의 안에서 왼쪽 또는 오른쪽 이동시키는 기능이다.
+        2. float가 지정된 박스는 문서의 일반적인 흐름에 영향을 받지 ㅏㅇㄶ으면서 이동된 위치에 떠 있다.
+        */
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+
+      .box2 {
+        background-color: green;
+        float: right;
+      }
+
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+
+      div.wrap p {
+        clear: both; /* float 해제 */
+      }
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <span>inline</span>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/images/gosu.jpg" alt="고수 영화배우" />
+      <p>
+        더불어민주당 이재명 대표의 장남 동호 씨의 '불법 도박' 의혹을 수사중인
+        경찰이 지난 14일 동호 씨를 소환해 조사했다. 15일 경찰에 따르면
+        경기남부경찰청 사이버범죄수사대는 상습도박, 게임산업진흥에 관한 법률
+        위반, 성매매처벌법 위반 등 혐의로 전날 이씨를 소환했다. 조사는 오전부터
+        밤 늦게까지 진행된 것으로 전해졌다.
+      </p>
+    </div>
+  </body>
+</html>

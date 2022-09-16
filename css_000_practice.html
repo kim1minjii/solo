@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_000_practice.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+
+      /* header */
+      header {
+        height: 75px;
+        background-color: white;
+        border: 1px solid black;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+      }
+
+      .wrapper {
+        color:black;
+        line-height: 75px;
+        float: right;
+      }
+
+      .menu {
+        float: left;
+        line-height: 75px;
+        color: black;
+        padding: 0 15px;
+        display: block;
+      
+      }
+
+      .wrapper {
+        width: 1170px;
+        margin: 0 auto;}
+
+      .clearfix{
+        content: '';
+        display: block;
+        clear: both;}
+
+      
+
+      
+
+    </style>
+  </head>
+  <body>
+
+<header>
+  <div class='wrapper'>
+    <img src='images/images/logo.gif' alt='다윤아트'>
+    <nav>
+      <ul class="menu">
+        <li><a href='#'>로그인</a></li> 
+        <li><a href='#'>회원가입</a></li> 
+        <li><a href='#'>마이페이지</a></li> 
+        <li><a href='#'>이용안내</a></li> 
+        <li><a href='#'>고객센터</a></li> 
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <div class="#">
+          <nav>
+            <ul class="mainMenu">
+              <li class="detail"><a href="#">상세페이지</a></li>
+              <li class="shop"><a href="#">장바구니</a></li>
+              <li class="gallery"><a href="#">고객 갤러리</a></li>
+              <li class="dillvery"><a href="#">주문배송</a></li>
+              <li class="question"><a href="#">자주 묻는 질문</a></li>
+            </ul>
+          </nav>
+
+          <div class='search-box'>
+            <form action='.' method='post'>
+              <input class='search-txt' type='text' placeholder='SEARCH'>
+              <a class='search-bin' type='submit'></a>
+            </form>
+          </div>
+  </body>
+</html>

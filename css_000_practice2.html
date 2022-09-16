@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_000_practice2.html</title>
+    <style>
+      /*메뉴상단바*/
+      #topMenu {
+        width: 2200px;
+        margin-top: 110px;
+        position: relative;
+        max-width: 100%;
+      }
+      /* 
+      #topMenu ul {
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      } */
+
+      #topMenu ul li {
+        list-style: none;
+        background-color: black;
+        float: left;
+        line-height: 50px;
+        text-align: center;
+      }
+
+      #topMenu .menuLink {
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 270px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      /*검색창*/
+
+      .search_box {
+        position: absolute;
+        top: 6%;
+        right: 38%;
+      }
+
+      /* 로고 */
+      img {
+        width: 220px;
+        height: 120;
+        transform: translate(80px, -130px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="topMenu">
+        <ul class="main">
+          <li><a class="menuLink" href="#">상세페이지</a></li>
+          <li><a class="menuLink" href="#">장바구니</a></li>
+          <li><a class="menuLink" href="#">고객 갤러리</a></li>
+          <li><a class="menuLink" href="#">주문 배송</a></li>
+          <li><a class="menuLink" href="#">자주 묻는 질문</a></li>
+        </ul>
+      </div>
+
+      <div class="search_box">
+        <form action="." method="post">
+          <input class="search-txt" type="text" placeholder="SEARCH" />
+          <button class="search-bin" type="submit"></button>
+        </form>
+      </div>
+
+      <div class="logo">
+        <img src="images/images/logo.gif" alt="다윤아트" />
+      </div>
+    </header>
+  </body>
+</html>
